@@ -35,15 +35,20 @@ startBtn.addEventListener("click", function(){
 
 //buttons for the answers 
 var myFunction = listItems.addEventListener("click", function(){
+    question.textContent = quiz.questions[0];
+    ans1.textContent = quiz.answer1[0];
+    ans2.textContent = quiz.answer2[0];
+    ans3.textContent = quiz.answer3[0];
+    ans4.textContent = quiz.answer4[0];
 
-    if (quiz.correctAnswers[0] === quiz.answer3[0]){
-        alert("Correct!");
+    if (quiz.correctAnswers[0] === quiz.answer3[0] && secondsLeft!== 0){
+        
         question2();
     } else {
-        alert("Wrong...");
+        secondsLeft = secondsLeft - 5;
          question2();
         }
-        
+
 //Question #2
     function question2(){
         question.textContent = quiz.questions[1];
@@ -52,11 +57,10 @@ var myFunction = listItems.addEventListener("click", function(){
         ans3.textContent = quiz.answer3[1];
         ans4.textContent = quiz.answer4[1];
 
-        if (quiz.correctAnswers[1] === quiz.answer1[1]){
-            alert("Correct!");
+        if (quiz.correctAnswers[1] === quiz.answer1[1] && secondsLeft!== 0){
             question3();
         } else {
-            alert("Wrong...");
+            secondsLeft = secondsLeft - 5;
             question3();
             }
     }
@@ -68,11 +72,11 @@ var myFunction = listItems.addEventListener("click", function(){
         ans3.textContent = quiz.answer3[2];
         ans4.textContent = quiz.answer4[2];
 
-        if (quiz.correctAnswers[2] === quiz.answer4[2]){
-            alert("Correct!");
+        if (quiz.correctAnswers[2] === quiz.answer4[2] && secondsLeft!== 0){
+           
             question4();
         } else {
-            alert("Wrong...");
+            secondsLeft = secondsLeft - 5;
             question4();
             }
     }
@@ -84,11 +88,10 @@ var myFunction = listItems.addEventListener("click", function(){
         ans3.textContent = quiz.answer3[3];
         ans4.textContent = quiz.answer4[3];
 
-        if (quiz.correctAnswers[3] === quiz.answer1[3]){
-            alert("Correct!");
+        if (quiz.correctAnswers[3] === quiz.answer1[3] && secondsLeft!== 0){
             question5();
         } else {
-            alert("Wrong...");
+            secondsLeft = secondsLeft - 5;
             question5();
             }
     }
@@ -100,12 +103,12 @@ var myFunction = listItems.addEventListener("click", function(){
         ans3.textContent = quiz.answer3[4];
         ans4.textContent = quiz.answer4[4];
 
-        if (quiz.correctAnswers[4] === quiz.answer3[4]){
-            alert("Correct!");
-            //getScore();
+        if (quiz.correctAnswers[4] === quiz.answer3[4] && secondsLeft!== 0){
+            
+            question.textContent = "You scored " + secondsLeft;
         } else {
-            alert("Wrong...");
-            //getScore();
+            secondsLeft = secondsLeft - 5;
+            question.textContent = "You scored " + secondsLeft;
             }
     }
 });
@@ -144,4 +147,4 @@ function endQuiz(){
     //Clear the questions and answers
 }
 
-
+// Add highscore info
