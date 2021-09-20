@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link 
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href = "assets/css/style.css"> </link>
 </head>
+
+<!--Add the link to the other html to show the scores-->
+<!--Top of the page-->
+<header>
+    <span>
+        <h1>
+            <a href = "./highscore HTML/index.html">View Highscores</a>
+        </h1>
+    </span>
+    <!--refer to timer exercise -->
+    <span id = "timer">
+        <h1> Timer: </h1>
+    </span>
+</header>
+
+
 <body>
-    
+    <section class = "container">
+        <article>
+            <h1 id = "start-text">Coding Quiz</h1>
+            <h2 id = "questions"></h2>
+            <p id = "start-text">Please use the button to start</p>
+            <button id = "start-text" class = "startbtn">Start</button>           
+        </article>
+        <article>
+            <ol id = "list-items">
+                <li><button id = "ans1"></button></li>
+                <li><button id = "ans2"></button></li>
+                <li><button id = "ans3"></button></li>
+                <li><button id = "ans4"></button></li>
+            </ol>
+        </article>
+
+    </section>
 </body>
+<script src = "assets/js/script.js">
+</script>
 </html>

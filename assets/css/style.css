@@ -1,0 +1,37 @@
+* {
+
+}
+
+h1 {
+    display: inline-block;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+#timer { 
+    text-align: end;
+    margin-left: 275px;
+
+}
+
+/* .container {
+    display: flex;
+} */
+
+section {
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: aquamarine;
+   /* fix box sizing and responesiveness*/
+}
+
+#list-items {
+    visibility: hidden;
+}
