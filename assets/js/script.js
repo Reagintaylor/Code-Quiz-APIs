@@ -20,6 +20,21 @@ correctAnswers: ["111", "2", "3333", "4", "555"],
 
 i = 1
 
+// I added the functions up here so that it I can call them down below,
+// else it will show up as undefined.
+function endQuiz(){
+    timer.textContent = "Time's Up!";
+    question.textContent = "You scored " + secondsLeft;
+    //getScore(); 
+    //Clear the questions and answers
+    ans1.textContent.setAttribute("style", "display:none;");
+    ans2.textContent.setAttribute("style", "display:none;");
+    ans3.textContent.setAttribute("style", "display:none;");
+    ans4.textContent.setAttribute("style", "display:none;");
+}
+// Add highscore info
+
+
 //buttons for the answers 
 listItems.addEventListener("click", function(event){
     var answer = event.target.textContent;
@@ -104,24 +119,19 @@ var startTimer = function() {
           // Calls function to end quiz and display score
           endQuiz();
         }
-        
-        //Deduct 5 secs when a question is answered incorrectly
-        //if()
-    
       }, 1000);
     
 }
 
-function endQuiz(){
-    timer.textContent = "Time's Up!"
-    question.textContent = "You scored " + secondsLeft;
-    //getScore();
-    //Clear the questions and answers
-    
-    ans1.textContent.setAttribute("style", "display:none;")
-    ans2.textContent.setAttribute("style", "display:none;") 
-    ans3.textContent.setAttribute("style", "display:none;")
-    ans4.textContent.setAttribute("style", "display:none;")
-}
+// function endQuiz(){
+//     timer.textContent = "Time's Up!";
+//     question.textContent = "You scored " + secondsLeft;
+//     //getScore();
+//     //Clear the questions and answers
+//     ans1.textContent.setAttribute("style", "display:none;");
+//     ans2.textContent.setAttribute("style", "display:none;");
+//     ans3.textContent.setAttribute("style", "display:none;");
+//     ans4.textContent.setAttribute("style", "display:none;");
+// }
 
 // Add highscore info

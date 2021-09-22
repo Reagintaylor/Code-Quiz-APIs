@@ -26,6 +26,7 @@ a:hover {
 }
 
 #timer { 
+    display: inline-block;
     text-align: end;
     margin-left: 850px;
     color: var(--brown);
@@ -34,6 +35,7 @@ a:hover {
 
 .container {
     color: var(--light);
+    font-size: x-large;
 }
 
 section {
