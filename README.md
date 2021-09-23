@@ -8,11 +8,9 @@
 
 # Usage
 - https://reagintaylor.github.io/Code-Quiz-APIs/ 
+- https://github.com/Reagintaylor/Code-Quiz-APIs 
 
 - To play my quiz, click the github link so that it can open in your browser.
-- '''md
-![code quiz](assets/)
-
 
 # Credits
 
