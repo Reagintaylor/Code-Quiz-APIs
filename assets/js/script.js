@@ -10,12 +10,12 @@ var results = document.querySelector("#results")
 
 //Question and answer strings
 var quiz = {
-questions: ["ques1", "ques2", "ques3", "ques4", "ques5"],
-answer1: ["1", "2", "3", "4", "5"],
-answer2: ["11", "22", "33", "44", "55"],
-answer3: ["111", "222", "333", "444", "555"],
-answer4: ["1111", "2222", "3333", "4444", "5555"],
-correctAnswers: ["111", "2", "3333", "4", "555"],
+questions: ["Which element do you use to link a javscript file to an html file?", "Which program is primarily used for styling?", "what symbol is used in CSS to refer to an 'id' in html?", "Which property is used in javascript to style an element?", "Which of the following is not a primitive type in javascript?"],
+answer1: ["<link></link>", "CSS", ".", "setAttribute()", "number"],
+answer2: ["<a></a>", "Javascript", "/", "textContent", "boolean"],
+answer3: ["<script></script>", "HTML", "[]", "console.log()", "span"],
+answer4: ["<img/>", "jQuery", "#", "querySelector", "string"],
+correctAnswers: ["<script></script>", "CSS", "#", "setAttribute()", "span"],
 }
 
 i = 1
